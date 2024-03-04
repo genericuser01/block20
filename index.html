@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <form onsubmit="addNumber(this.number.value, event)">
+        <label for="number">Add Number to the Number Bank</label>
+        <input id="number" name="number" type="number"/>
+        <button type="submit">Add Number</button>
+    </form>
+    <h1>Number Bank</h1>
+    <div id="numBank"></div>
+    <button onclick="sort1()">Sort 1</button>
+    <button onclick="sortAll()">Sort All</button>
+
+    <h1>Sorted Numbers</h1>
+    <h2>Odds</h2>
+    <div id="odds"></div>
+    <h2>Evens</h2>
+    <div id="evens"></div>
+
+</body>
+</html>
